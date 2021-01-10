@@ -1,55 +1,39 @@
 body {
-
-	font-family: arial, Helvetica,  sans-serif;
-	font-size: 12;
-	color: black;
-	align-self: center;
-	align-content: center;
-	padding-bottom: 2px;
-	background-image: url("Images/Classics1.jpg");
-
-
+  font-family: arial, Helvetica, sans-serif;
+  font-size: 12;
+  color: black;
+  align-self: center;
+  align-content: center;
+  padding-bottom: 2px;
+  background-image: url("Images/Classics1.jpg");
 }
 
-
 p {
-
-	width: 600px;
-	margin-left: 20px;
-
+  width: 600px;
+  margin-left: 20px;
 }
 
 .principalBar {
-
-	display: flex;
-	width: 100%;
-	color: white;
-	text-decoration: none;
-	align-items: center;
-	justify-content: space-around;
-
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav {
-
-	background-color: black;
-	margin-bottom: 10px;
-
+  background-color: black;
+  margin-bottom: 10px;
 }
-
 
 nav ul a {
-
-	color: white;
-
+  color: white;
 }
 
-
-a, ul {
-
-	color: black;
-	text-decoration: none;
-	list-style: none;
-	
+a,
+ul {
+  color: black;
+  text-decoration: none;
+  list-style: none;
 }
-
