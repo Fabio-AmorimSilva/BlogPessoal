@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="contact.css" />
     <meta name="viewport" content="width=width-device, initial-scale=1.0" />
     <meta charset="utf-8" />
   </head>
   <body>
     <nav class="principalBar">
-      <ul class="principalBar">
-        <li><a href="index.html" target="blank">Home</a></li>
-        <li><a href="#" target="blank">Articles</a></li>
-        <li><a href="#" target="blank">Archive</a></li>
-        <li><a href="#" target="blank">About</a></li>
-        <li><a href="contact.html" target="blank">Contact</a></li>
+      <ul class="nav nav-pills nav-fill principalBar">
+        <li class="nav-item"><a class="nav-link" href="index.html" target="blank">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Archive</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" target="blank">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" target="blank">Contact</a></li>
       </ul>
     </nav>
 
+
     <form class="contact" method="post" action="contact.html">
-      <legend>Envie-nos uma mensagem.</legend>
+      <legend class="formLegend">Envie-nos uma mensagem</legend>
       <p>
         <label>Nome/Apelido: </label>
         <input type="text" name="user_name" id="name" />
@@ -36,7 +38,7 @@
         <textarea cols="10" maxlength="500" rows="10"></textarea>
       </p>
       <p>
-        <button type="submit">Enviar</button>
+        <button class="btn btn-dark" type="submit">Enviar</button>
       </p>
     </form>
   </body>

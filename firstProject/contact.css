@@ -50,4 +50,9 @@ textarea {
   margin: 0 auto;
   margin-bottom: 5px;
   box-sizing: border-box;
+
+}
+
+.formLegend {
+  margin-left: 34%;
 }

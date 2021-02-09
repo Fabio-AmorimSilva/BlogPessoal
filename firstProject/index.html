@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title>Personal Blog</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
   </head>
   <body>
     <nav class="principalBar">
-      <ul class="principalBar">
-        <li><a href="index.html" target="blank">Home</a></li>
-        <li><a href="#" target="blank">Articles</a></li>
-        <li><a href="#" target="blank">Archive</a></li>
-        <li><a href="about.html" target="blank">About</a></li>
-        <li><a href="contact.html" target="blank">Contact</a></li>
+      <ul class="nav nav-pills nav-fill principalBar">
+        <li class="nav-item"><a class="nav-link" href="index.html" target="blank">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Archive</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" target="blank">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" target="blank">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="content">
+    <div class="container-fluid content">
       <header>
-        <img class="presentationImg" src="Images/Classics1.png" />
-        <ul class="subBar">
-          <li><a href="#" target="blank">Book of week</a></li>
-          <li><a href="#" target="blank">Author of month</a></li>
-          <li><a href="readinglist.html" target="blank">Reading lists</a></li>
-          <li><a href="#" target="blank">Book Reviews</a></li>
-          <li><a href="#" target="blank">Book analysis</a></li>
+        <img class="presentationImg" src="Images/Classics1.png" alt="Imagem de diversos livros"/>
+        <ul class="nav nav-pills nav-fill subBar">
+          <li class="nav-item"><a class="nav-link" href="#" target="blank">Book of week</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" target="blank">Author of month</a></li>
+          <li class="nav-item"><a class="nav-link"  href="readinglist.html" target="blank">Reading lists</a></li>
+          <li class="nav-item"><a class="nav-link"  href="#" target="blank">Book Reviews</a></li>
+          <li class="nav-item"><a class="nav-link"  href="#" target="blank">Book analysis</a></li>
         </ul>
       </header>
       <main class="content">
@@ -71,17 +72,17 @@
           </p>
         </article>
       </main>
-      <footer>
-        <h3>Últimos artigos</h3>
-        <ul class="recent">
-          <li>Odisséia - Homero</li>
-          <li>Sussuros, A Vida Privada na União Soviética - Orlando Figgs</li>
-          <li>O que são Light Novels?</li>
+      <footer class="card">
+        <h3 class="card-header">Mais acessados da semana</h3>
+        <ul class="list-group recent">
+          <li class="list-group-item list-group-item-action">Odisséia - Homero</li>
+          <li class="list-group-item list-group-item-action">Sussuros, A Vida Privada na União Soviética - Orlando Figgs</li>
+          <li class="list-group-item list-group-item-action">O que são Light Novels?</li>
         </ul>
-        <div class="rigths">
-          <p>&copy; Todos os direitos reservados para Codex Gigas 2021.</p>
-        </div>
       </footer>
+      <div class="container-fluid rigths">
+        <p>&copy; Todos os direitos reservados para Codex Gigas 2021.</p>
+      </div>
     </div>
   </body>
 </html>

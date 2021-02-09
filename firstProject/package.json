@@ -1,17 +1,24 @@
 {
   "name": "firstproject",
   "version": "1.0.0",
-  "description": "",
   "main": "readinglist.js",
+  "private": true,
   "dependencies": {
+    "lodash": "^4.17.20",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "eslint": "^7.17.0"
+    "eslint": "^7.17.0",
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
+		"dev": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
 }
