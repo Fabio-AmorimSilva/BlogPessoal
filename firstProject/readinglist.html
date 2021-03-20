@@ -2,26 +2,27 @@
 <html>
   <head>
     <title>Reading Lists</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="readinglist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
   </head>
   <body>
     <nav class="principalBar">
-      <ul class="principalBar">
-        <li><a href="index.html" target="blank">Home</a></li>
-        <li><a href="#" target="blank">Articles</a></li>
-        <li><a href="#" target="blank">Archive</a></li>
-        <li><a href="about.html" target="blank">About</a></li>
-        <li><a href="contact.html" target="blank">Contact</a></li>
+      <ul class="nav nav-pills nav-fill principalBar">
+        <li class="nav-item"><a class="nav-link" href="index.html" target="blank">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="blank">Archive</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" target="blank">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" target="blank">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Incomplete feature
-	<input type="range" class="bright" name="slider"><output></output>
+	  <input type="range" class="bright" name="slider"><output></output>
     -->
 
-    <ul class="booksGenre">
+    <ul class="booksGenre list-group-horizontal">
       <li><a>Classics</a></li>
       <li><a>Fiction</a></li>
       <li><a>NonFiction</a></li>
@@ -34,11 +35,11 @@
       <li><a>Games</a></li>
     </ul>
 
-    <label>Enter category: </label><br />
-    <input type="text" name="book_name" class="books" /><br /><br />
-    <button type="submit" class="submitBtn">Submit</button><br /><br />
+    <label class="form-label">Enter category: </label><br/>
+    <input type="text" name="book_name" class="books form-control" placeholder="Book genre" /><br/>
+    <button type="submit" class="submitBtn btn-dark">Submit</button><br/><br/>
 
-    <div class="booksList"></div>
+    <div class="booksList mb-4"></div>
 
     <script type="text/javascript" src="readinglist.js"></script>
   </body>

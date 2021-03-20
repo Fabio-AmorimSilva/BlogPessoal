@@ -66,8 +66,12 @@ function booksCreate() {
         var book = document.createElement("img");
         var title = document.createElement("figcaption");
         title.textContent = arrayBooks[i][j];
+        title.setAttribute("class", "booksList");
         //Insere as imagens conforme a categoria escolhida
         book.setAttribute("src", allBooks[i] + "/image" + count + ".jpg");
+        book.setAttribute("class", "booksList figure-img img-fluid rounded");
+        fig.setAttribute("class", "figure");
+        title.setAttribute("class", "figure-caption text-end");
         booksStand.appendChild(fig);
         fig.appendChild(book);
         fig.appendChild(title);
@@ -79,7 +83,15 @@ function booksCreate() {
   }
 }
 
+function enterBook(event){
+  if(event.keyCode == 13){
+    booksCreate();
+  }
+}
+
+
 btnSubmit.addEventListener("click", booksCreate);
+document.addEventListener("keyup", enterBook);
 
 brightValue.innerHTML = lightDark.value;
 
